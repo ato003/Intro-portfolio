@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.skill-card {
+  width: 280px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-logo {
+  width: 70px;
+  margin: 0 auto 15px;
+}
+
+.skill-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  width: 100%;
+  background: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress {
+  width: 75%;
+  height: 12px;
+  background: #f7df1e;
+  /* JS 노란색 */
+}
+
+.percent {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.skill-desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.4;
+}
