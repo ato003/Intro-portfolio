@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의집 - 마이페이지</title>
+  <link rel="icon" href="images/favicon1.png" sizes="16x16">
+  <link rel="icon" href="images/favicon1.png" sizes="32x32">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/mypage.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/menu_wrap.js"></script>
+</head>
+<body>
+  <header id="top">
+    <div id="top_tab">
+      <a href="#" class="icon_menu"><img src="images/btn_menu.png" alt="menu"></a>
+      <h1><a href="index.html"><img src="images/logo2.png" alt="오늘의집"></a></h1>
+      <div id="search_all">
+        <input type="search" id="btn_search" placeholder="search..">
+        <a href="#"><img src="images/btn_search.png" alt="검색"></a>
+      </div><!-- search_all -->
+    </div><!-- top_tab -->
+  </header><!-- top -->
+  
+  <div id="menu_wrap">
+    <div id="menu_top">
+      <h2 class="menu_logo"><a href="index.html"><img src="images/logo2.png" alt="오늘의집"></h2></a>
+      <div class="app_down"><a href="#"><img src="images/logo3.png" alt="logo" width="30"><span>앱 다운로드</span></a></div>
+    </div><!-- menu_top -->
+    <div id="menu_login">
+      <a href="login.html" class="btn_login login1">로그인</a>
+      <a href="login.html" class="btn_login login2">회원가입</a>
+    </div><!-- menu_login -->
+    <nav id="gnb">
+      <ul>
+        <li><a href="#">커뮤니티</a>
+          <ul class="submenu">
+            <li><a href="#">추천</a></li>
+            <li><a href="#">#채널</a></li>
+            <li><a href="#">집들이</a></li>
+            <li><a href="#">집사진</a></li>
+            <li><a href="#">살림수납</a></li>
+            <li><a href="#">반려동물</a></li>
+          </ul>
+        </li>
+        <li><a href="#">쇼핑</a>
+          <ul class="submenu">
+            <li><a href="#">가구</a></li>
+            <li><a href="#">패브릭</a></li>
+            <li><a href="#">주방</a></li>
+            <li><a href="#">수납/정리</a></li>
+            <li><a href="#">생활용품</a></li>
+            <li><a href="#">조명</a></li>
+            <li><a href="#">가전/디지털</a></li>
+            <li><a href="#">반려동물</a></li>
+            <li><a href="#">시공/DIY</a></li>
+            <li><a href="#">리퍼마켓</a></li>
+          </ul>
+        </li>
+        <li><a href="#">인테리어/생활</a>
+          <ul class="submenu">
+            <li><a href="#">홈(인테리어/생활)</a></li>
+            <li><a href="#">주거공간 시공</a></li>
+            <li><a href="#">부분시공</a></li>
+            <li><a href="#">시공자재 랭킹</a></li>
+            <li><a href="#">제품설치</a></li>
+            <li><a href="#">이사</a></li>
+            <li><a href="#">집보기 체크리스트</a></li>
+            <li><a href="#">아파트 시공사례</a></li>
+          </ul>
+        </li>
+        <li><a href="mypage.html">마이페이지</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">게시글 업로드</a></li>
+      </ul>
+    </nav><!-- gnb -->
+  </div><!-- menu_wrap -->
+
+  <nav id="quick"><!-- 탭메뉴 메뉴 -->
+    <ul>
+      <li><a href="#list_wrap1" class="selected">프로필</a></li>
+      <li><a href="#list_wrap2">사진/집들이</a></li>
+      <li><a href="#list_wrap3">노하우</a></li>
+      <li><a href="#list_wrap4">질문과답변</a></li>
+      <li><a href="#list_wrap5">리뷰</a></li>
+    </ul>
+  </nav><!-- quick -->
+
+  <div id="profile">
+    <div class="profile_img">
+      <a href="#"><img src="images/profile_img.png" alt="icon"></a>
+    </div><!-- profile_img -->
+    <div class="profile_info">
+      <p class="u_name">닉네임</p>
+      <div class="follow">
+        <p class="follow1">팔로잉<span>0</span></p>
+        <p class="follow2">팔로워<span>0</span></p>
+      </div><!-- follow -->
+    </div><!-- profile_info -->
+    <div class="opt_icon">
+      <a href="#"><img src="images/ico_gear.png" alt="icon"></a>
+      <a href="#"><img src="images/ico_share.png" alt="icon"></a>
+    </div><!-- opt_icon -->
+  </div><!-- profile -->
+
+  <div id="my_list">
+    <ul>
+      <li><a href="#"><img src="images/my_list1.png" alt="icon"><span>주문목록</span></a></li>
+      <li><a href="#"><img src="images/my_list2.png" alt="icon"><span>스크랩북</span></a></li>
+      <li><a href="#"><img src="images/my_list3.png" alt="icon"><span>My 쿠폰</span></a></li>
+      <li><a href="#"><img src="images/my_list4.png" alt="icon"><span>좋아요</span></a></li>
+    </ul>
+  </div><!-- my_list -->
+
+  <div id="delivery">
+    <h2 class="title">배송중인 상품</h2>
+    <div class="delivery_card">
+      <div class="del_t">
+        <p>배송중</p>
+        <div class="clock"><span>00.00.00</span> 도착예정</div>
+      </div><!-- del_t -->
+        <div class="del_con">
+          <div class="del_l">
+            <a href="#"><img src="images/delivery1.png" alt="product"></a>
+          </div><!-- del_l -->
+          <div class="del_r">
+            <p class="del_brand"><a href="#">LG 전자</a></p>
+            <p class="del_title"><a href="#">LG 휘센 제습기 DQ214MEGA 21L 카밍베이지</a></p>
+            <p class="del_opt">DQ214MEGA</p>
+            <div class="price">
+              <p class="price_per">57%<img src="images/ico_down-arrow.png" alt="icon"></p>
+              <p class="pirce_pro">643,900<span>원</span></p>
+            </div><!-- price -->
+          </div><!-- del_r -->
+        </div><!-- del_con -->
+    </div><!-- delivery_card -->
+    <div class="delivery_card">
+      <div class="del_t">
+        <p>배송중</p>
+        <div class="clock"><span>00.00.00</span> 도착예정</div>
+      </div><!-- del_t -->
+        <div class="del_con">
+          <div class="del_l">
+            <a href="#"><img src="images/delivery2.png" alt="product"></a>
+          </div><!-- del_l -->
+          <div class="del_r">
+            <p class="del_brand"><a href="#">코튼리빙</a></p>
+            <p class="del_title"><a href="#">리뷰 8만 돌파! 40수 호텔컬렉션 200g 수건10장</a></p>
+            <p class="del_opt">01.호텔컬렉션 40수 화이트 10장</p>
+            <div class="price">
+              <p class="price_per">62%<img src="images/ico_down-arrow.png" alt="icon"></p>
+              <p class="pirce_pro">29,900<span>원</span></p>
+            </div><!-- price -->
+          </div><!-- del_r -->
+        </div><!-- del_con -->
+    </div><!-- delivery_card -->
+  </div><!-- delivery -->
+
+  <div id="cart_list">
+    <ul>
+      <li><a href="#"><img src="images/cart_list1.png" alt="icon"><span>주문목록</span></a></li>
+      <li><a href="#"><img src="images/cart_list2.png" alt="icon"><span>취소/교환/반품</span></a></li>
+      <li><a href="#"><img src="images/cart_list3.png" alt="icon"><span>선물함</span></a></li>
+      <li><a href="#"><img src="images/cart_list4.png" alt="icon"><span>리뷰관리</span></a></li>
+    </ul>
+  </div><!-- cart_list -->
+
+  <footer id="bottom">
+    <div class="bot_t">
+      <div class="bot_Tl">
+        <p class="bot_tit"><span class="bot_bg1">고객센터</span>1670-0876</p>
+        <p class="bot_clock">09:00 ~ 18:00</p>
+      </div><!-- bot_Tl -->
+      <ul class="bot_Tc">
+        <li class="bot_bg2">평일
+          <ul>
+            <li>전체문의 상담</li>
+          </ul>
+        </li>
+        <li class="bot_bg2">토요일, 공휴일
+          <ul>
+            <li>배송,주문건 상담</li>
+          </ul>
+        </li>
+        <li class="bot_bg2">일요일
+          <ul>
+            <li>휴무</li>
+          </ul>
+        </li>
+      </ul><!-- bot_Tc -->
+      <div class="bot_Tr">
+        <p class="bot_talk1"><a href="#"><span class="bot_talk2">카톡 상담</span>평일<br> 09:00 ~ 18:00</a></p>
+        <p class="bot_email"><a href="#">이메일 문의</a></p>
+      </div><!-- bot_Tr -->
+    </div><!-- bot_t -->
+    <ul class="fnb_info">
+      <li><a href="#">회사소개</a></li>
+      <li><a href="#">채용정보</a></li>
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#" class="bot_bold">개인정보 처리방침</a></li>
+      <li><a href="#">공지사항</a></li>
+      <li><a href="#">권리보호 센터</a></li>
+      <li><a href="#">입정신청</a></li>
+      <li><a href="#">제휴/광고 문의</a></li>
+      <li><a href="#">시공파트너 안내</a></li>
+      <li><a href="#" class="bot_bold">파트너 개인정보 처리방침</a></li>
+      <li><a href="#">상품광고 소개</a></li>
+      <li><a href="#">고객의 소리</a></li>
+    </ul><!-- bot_c -->
+    <div class="bot_b">
+      <h3><strong>(주)버킷플레이스</strong></h3>
+      <p>고객님이 현금결제한 금액에 대해 우리은행과 채무지급보증계약을 체결하여 안전거래를 보장하고 있습니다.<a href="#">서비스가입사실확인</a></p>
+      <p>(주)버킷플레이스는 통신판매중개자료 거래 당사자가 아니므로, 판매자가 등록한 상품정보 및 거래 등에 대해 책임을 지지 않습니다. 단, (주)버킷플레이스가 판매자로 등록 판매한 상품은 판매자로서 책임을 부담합니다.
+      </p>
+    </div><!-- bot_b -->
+    <ul class="sns">
+      <li><a href="#"><img src="images/sns_naver1.png" alt="sns"></a></li>
+      <li><a href="#"><img src="images/sns_kakao1.png" alt="sns"></a></li>
+      <li><a href="#"><img src="images/sns_google1.png" alt="sns"></a></li>
+      <li><a href="#"><img src="images/sns_facebook1.png" alt="sns"></a></li>
+      <li><a href="#"><img src="images/sns_apple1.png" alt="sns"></a></li>
+    </ul><!-- sns -->
+    <p class="copyright">Copyright 2014 bucketplace, Co., Ltd Arights reserved</p>
+  </footer><!-- bottom -->
+
+  <a href="#top" class="top_btn"><img src="images/top_arrow.png" alt="icon"></a>
+</body>
+</html>

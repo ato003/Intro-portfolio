@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의집 - 로그인 및 회원가입</title>
+  <link rel="icon" href="images/favicon1.png" sizes="16x16">
+  <link rel="icon" href="images/favicon1.png" sizes="32x32">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <!-- <script src="js/script17.js"></script> -->
+  <script src="js/login.js"></script>
+  <script type="text/javascript"> // 여기부터 18_로그인 txt 앞부분
+		$(document).ready(function(){
+			$("input[type=checkbox]").customizeCRInput();
+		});
+	</script>
+</head>
+<body>
+  <div id="wrap">
+    <div id="top_wrap">
+      <h1><a href="index.html"><img src="images/logo4.png" alt="오늘의집"></a></h1>
+    </div><!-- top_wrap -->
+    <!-- <div class="main_img"><img src="images/main_img.jpg" alt="banner"></div> -->
+
+    <!-- 탭 메뉴 -->
+    <ul class="login_list">
+      <li><a href="#login1" class="selected">기존 회원</a></li>
+      <li><a href="#login2">비회원 주문조회</a></li>
+      <div class="login_slider"></div>
+    </ul><!-- login_list -->
+
+    <!-- 탭 내용 -->
+    <div id="login_wrap">
+        <div id="login1"><!-- 회원 내용 -->
+          <form action="#" method="post">
+            <div><input type="text" id="u_id" placeholder="아이디"></div>
+            <div><input type="password" id="u_pwd" placeholder="비밀번호"></div>
+              <div id="btn_wrap">
+                <input type="submit" id="s_btn1" value="로그인">
+              </div>
+            <div id="chk_wrap">
+              <input type="checkbox" name="chk" value="1" id="chk1"><label for="chk1" class="type-checkbox">아이디 저장</label>
+              <input type="checkbox" name="chk" value="2" id="chk2"><label for="chk2" class="type-checkbox">로그인 상태유지</label>
+            </div><!-- chk_wrap -->
+            <div class="join">
+              <p class="sns_txt">SNS 간편 로그인/ 회원가입</p>
+              <ul class="sns">
+                <li><a href="#"><img src="images/sns_naver2.png" alt="sns"></a></li>
+                <li><a href="#"><img src="images/sns_kakao2.png" alt="sns"></a></li>
+                <li><a href="#"><img src="images/sns_google2.png" alt="sns"></a></li>
+                <li><a href="#"><img src="images/sns_facebook2.png" alt="sns"></a></li>
+                <li><a href="#"><img src="images/sns_apple2.png" alt="sns"></a></li>
+              </ul>
+            </div><!-- join -->
+            <div class="search">
+              <a href="#">로그인에 문제가 있으신가요? >></a>
+            </div>
+          </form>
+        </div><!-- login1 -->
+
+
+        <div id="login2"><!-- 비회원 내용 -->
+          <form action="#" method="post">
+            <div><input type="text" id="u_order" placeholder="주문번호"></div>
+            <div><input type="email" id="u_email" placeholder="이메일"></div>
+            <div class="u_num">주문자 전화번호</div>
+            <div id="tel_wrap">
+              <select id="tel1">
+                <option>선택</option>
+                <option value="010">010</option>
+                <option value="011">011</option>
+                <option value="016">016</option>
+                <option value="018">018</option>
+                <option value="019">019</option>
+              </select>
+              <input type="tel" id="tel2"> <input type="tel" id="tel3">
+            </div><!-- tel_wrap -->
+            <div id="btn_wrap2">
+              <div><input type="submit" id="s_btn2" value="주문조회"></div>
+            </div><!-- btn_wrap2 -->
+            <div>
+              <a href="#" class="u_join1">회원가입 >></a>
+            </div>
+            <div class="join">
+              <p class="sns_txt">SNS 간편 로그인/ 회원가입</p>
+              <ul class="sns">
+                <li><a href="#"><img src="images/sns_naver2.png" alt="sns"></a></li>
+                <li><a href="#"><img src="images/sns_kakao2.png" alt="sns"></a></li>
+                <li><a href="#"><img src="images/sns_google2.png" alt="sns"></a></li>
+                <li><a href="#"><img src="images/sns_facebook2.png" alt="sns"></a></li>
+                <li><a href="#"><img src="images/sns_apple2.png" alt="sns"></a></li>
+              </ul>
+              <div>
+                <p class="u_join2">회원가입을 통해 더 많은 혜택을 누려보세요!</p>
+              </div>
+            </div><!-- join -->
+          </form>
+        </div><!-- login2 -->
+    </div><!-- login_wrap -->
+  </div><!-- wrap -->
+</body>
+</html>

@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/* reset */
+a { text-decoration: none; color: inherit; }
+body, select, input { font:normal 16px "Pretendard-Regular",sans-serif; color: #333; }
+html, body { width: 100%; min-width: 320px; overflow-y: scroll; scrollbar-width: none; -ms-overflow-style:none; background-color: #fff; }
+
+/* font */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* top */
+#top { width: 100%; padding: 10px; box-sizing: border-box; border-bottom: 1px solid #358E3C; box-shadow: 0 0 5px #ccc; position: fixed; z-index: 99999; background-color: #fff; }
+#top img { vertical-align: top; }
+#top_tab { width: 100%; display: flex; justify-content: space-between; align-items: center; }
+#top_tab .icon { margin-right: 3%; }
+#top_tab h1 { width: 40%; max-width: 100px; }
+#top_tab h1 img { width: 80%; }
+
+#search_all { width: 50%; margin-right: 5%; display: flex; justify-content: space-between; align-items: center; position: relative;  }
+#btn_search { border: 2px solid #358E3C; text-indent: 1em; width: 100%; height: 35px; line-height: 35px; border-radius: 100px; outline: none; }
+/* #btn_search::placeholder { color: #ccc; } */
+#search_all a { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); }
+
+/* menu */
+#menu_wrap { background-color: #EAF3D8; color: #333; width: 75%; height: 100vh; padding: 3%; border: 3px solid #87D68D; border-left: none; box-sizing: border-box; overflow-y: auto; position: absolute;/* 수정 !! */ top: 0; left: -75%;/* -75%, 0으로 해놓고 디자인 */ z-index: 999999; }
+#menu_wrap img { vertical-align: top;}
+#menu_top { width: 100%; display: flex; justify-content: space-between; align-items: center; }
+.menu_logo { width: 35%;  }
+.menu_logo img { width: 100%; }
+.app_down span {background: url('../images/btn_arrow_right.png') no-repeat right center; font-size: 13px; font-weight: bold; color: #358E3C; padding-right: 18px; margin-left: 3px; line-height: 30px;  }
+
+#menu_login { clear: both; width: 100%; display: flex; align-items: center; justify-content: center; margin: 10px 0 20px; }
+.btn_login {
+  display: flex;  
+  width: 40%; max-width: 130px;
+  height: 50px; line-height: 50px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #87D68D; border-radius: 10px; 
+  font-size: 14px; font-weight: bold;
+}
+.login1 { background-color: #fff; color: #87D68D; margin-right: 10px; }
+.login1:hover { color: #358E3C; border: 2px solid #358E3C; }
+.login2 { color: #fff; background-color: #87D68D; }
+.login2:hover { color: #358E3C;; border: 2px solid #358E3C; }
+
+/* 1단 */
+#gnb ul li { clear: both; line-height: 2.5em; text-indent: 1em; font-size: 14px; font-weight: bold; }
+/* 1단의 기본 a */
+#gnb ul li a { border: 2px solid #fff; background-color: #fff; display: block; margin-top: 10px; color: #358E3C; border-radius: 5px;  } 
+/* 1단의 선택 a */
+#gnb ul li a.on { border: 2px solid #358E3C; }
+#gnb ul li a:hover { border: 2px solid #358E3C; }
+
+/* 2단 */
+#gnb .submenu { display: none; } /* 디자인 다 하면 2단 숨기기 */
+#gnb .submenu li { line-height: 1.5em; text-indent: 2em; font-size: 14px;}
+/* 2단의 기본 a (선택이 안된, 전체적인 디자인) */
+#gnb .submenu li a { font-weight: normal; border: none; background: none; color: #666;} 
+#gnb .submenu li a:hover { border: none; text-decoration: underline; }
+/* 2단의 선택된 a에 대한 디자인 */
+#gnb .submenu li a.selected { text-decoration: underline; color: #358E3C; }
+
+
+/* quick */
+#quick { width: 100%; height: 30px; padding-top: 80px; font-size: 12px; margin-bottom: 20px; }
+#quick ul li { width: 20%; height: 30px; float: left; text-align: center; line-height: 30px; transition: all .2s; }
+#quick ul li:hover { transform: translate( 0, -2px); }
+/* 기본 a */
+#quick ul li a { font-weight: normal; color: #666; } 
+/* 선택된 a */
+#quick ul li a.selected { font-weight: bold;  color: #358E3C; text-decoration: underline; }
+
+
+/* profile */
+#profile { width: 100%; overflow: hidden; text-align: center; display: flex; justify-content: start; align-items: center; padding: 20px 0; border-bottom: 4px double #ccc; }
+.profile_img { width: 20%; max-width: 90px; float: left; }
+.profile_img img { width: 80%; }
+.profile_info { width: 40%; max-width: 150px; float: left; text-align: left; }
+.u_name { font-size: 18px; font-weight: bold; margin-bottom: 10px; color: #333; }
+.follow { color: #999; font-size: 14px; }
+.follow span { margin-left: 10px; color: #87D68D; font-size: 16px; font-weight: bold; }
+.follow1 { display: inline-block; border-right: 1px solid #ccc; padding-right: 10px; }
+.follow2 { display: inline-block; }
+.opt_icon { float: left; padding: 5px; }
+
+/* my_list */
+#my_list { width: 90%; margin: 30px auto 0; }
+#my_list ul { display: flex; justify-content: space-between; }
+#my_list ul li { text-align: center; transition: all .3s; }
+#my_list ul li:hover { transform: translate(0, -3px); }
+#my_list ul li a { display: block; }
+#my_list ul li a:hover span { color: #87D68D; }
+#my_list ul li a span { display: block; margin-top: 5px; font-weight: bold; color: #333; }
+
+
+/* delivery */
+#delivery { width: 100%; margin-bottom: 30px; }
+.title { font-size: 18px; background: url("../images/icon_title.png") no-repeat left center; text-indent: 1.5em; margin: 40px 0 20px; margin-left: 2%; color: #333; }
+.delivery_card { width: 90%; border: 1px solid #ccc; border-radius: 10px; padding: 5px; margin: 10px auto; }
+.del_t { overflow: hidden; color: #87D68D; margin-left: 3%;  margin-bottom: 5px; margin-top: 5px; }
+.del_t p { font-weight: bold; float: left; }
+.del_t .clock { color: #87D68D; font-weight: bold; float: left; margin-left: 10px; }
+.del_t .clock span { margin-right: 5px; color: #358E3C; }
+.del_con { width: 100%; display: flex; justify-content: space-around; }
+.del_l { width: 50%; float: left; margin: 5px 9px; }
+.del_l > a:hover { opacity: 0.6; }
+.del_l img { width: 100%; vertical-align: top; border: 1px solid #ccc; border-radius: 10px; box-sizing: border-box; }
+.del_r { font-size: 14px; text-align: left; margin: 5px 0; }
+.del_brand { color: #999; font-size: 12px; margin-bottom: 2%; } 
+.del_brand:hover { text-decoration: underline; }
+.del_title { margin-bottom: 2%; }
+.del_opt { color: #ccc; font-size: 12px; margin-bottom: 2%; }
+.del_title { font-size: 14px; color: #333; }
+.del_title > a:hover { text-decoration: underline; }
+.price { overflow: hidden; font-size: 20px; font-weight: bold; color: #87D68D; }
+.price .price_per { display: flex; justify-content: center; align-items: center; /* padding-right: 25px;  */margin-right: 5px;/*  background: url("../images/ico_down-arrow.png") no-repeat right center; */ float: left;  }
+.price .price_per img { width: 20%; max-width: 24px; min-width: 15px; margin-left: 3px;  }
+.price .pirce_pro { color: #358E3C; float: left; }
+.price .pirce_pro span { font-weight: normal; font-size: 14px; color: #aaa; margin-left: 3px; }
+
+
+/* cart_list */
+#cart_list ul li { border-bottom: 2px solid #ccc; height: 60px; background: url("../images/ico_right_arrow2.png") no-repeat right 15px center;  }
+#cart_list ul li a { line-height: 60px; display: flex; justify-content: left; align-items: center;  padding-left: 15px; }
+#cart_list ul li a:hover { background: #eaeaea url("../images/ico_right_arrow2.png") no-repeat right 10px center; }
+#cart_list ul li a img { margin-right: 10px; }
+#cart_list ul li a span { font-weight: bold; color: #333; font-size: 16px; }
+
+
+/* bottom */
+#bottom { background-color: #EAF3D8; margin-top: 30px; padding: 20px 10px; }
+.bot_t { overflow: hidden; margin-bottom: 10px; }
+.bot_Tl{ width: 30%; font-weight: bold; float: left; padding-top: 30px; }
+.bot_tit { font-size: 16px; margin-bottom: 10px; }
+.bot_tit:hover { text-decoration: underline; cursor: pointer; }
+.bot_tit .bot_bg1 { background: url("../images/ico_right_arrow1.png") no-repeat left 60px center; display: block; margin-bottom: 5px; }
+.bot_clock { font-size: 12px; }
+
+.bot_Tc { width: 40%; float: left; }
+/* 1단 */
+.bot_bg2 { background: url("../images/btn_arrow_right.png") no-repeat left top 2px; padding-left: 20px; font-weight: bold; font-size: 15px; color: #333; line-height: 1.5em;  }
+/* 2단 */
+.bot_Tc li ul li { font-weight: normal; font-size: 14px; padding-left: 0; background: none; margin-bottom: 10px; }
+
+.bot_Tr { width: 30%; float: left; }
+.bot_talk1 { font-size: 12px; text-align: center; border: 1px solid #000; border-radius: 7px; height: 60px; box-sizing: border-box; }
+.bot_talk1 a { display: block; padding: 5px 0 4px; border-radius: 7px; }
+.bot_talk1 a .bot_talk2 { display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px; }
+.bot_talk1 a:hover { background-color: #87D68D; color: #333; }
+.bot_email { text-align: center; font-size: 14px; font-weight: bold; border: 1px solid #000; border-radius: 7px; height: 60px; line-height: 60px; margin-top: 10px; }
+.bot_email a { border-radius: 7px; display: block; }
+.bot_email a:hover { background-color: #87D68D; color: #333; }
+
+.fnb_info { width: 99%; margin: 0 auto 10px; text-align: center; line-height: 1.5em; }
+.fnb_info li { display: inline-block; font-size: 10px; margin: 0 5px; }
+.fnb_info li .bot_bold { font-weight: bold; }
+
+.bot_b h3 { margin-bottom: 5px; font-size: 12px; }
+.bot_b p { font-size: 10px; margin-bottom: 5px; }
+.bot_b p a { font-weight: bold; }
+.bot_b p a:hover { text-decoration: underline; }
+
+.sns { width: 70%; overflow: hidden; margin: 5px 0 5px;  }
+.sns li { width: 20%; float: left; display: flex; justify-content: left; align-items: center; }
+.sns li a img { vertical-align: top; }
+.copyright { font-size: 10px; }
+
+.top_btn { position: fixed; right: 10px; bottom: 10px; transition: all 0.3s; text-shadow: 1px 1px 1px #333; }
+.top_btn:hover { transform: rotate(360deg) scale(1.1); }
